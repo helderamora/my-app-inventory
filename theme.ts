@@ -14,6 +14,24 @@ export const style = StyleSheet.create({
     padding: 10,
     // backgroundColor: '#dedeb8',
   },
+  viewButtonAdd: {
+    flex: 0, 
+    paddingHorizontal: 200,
+    paddingVertical: 10,
+    alignItems: 'center',
+    // backgroundColor: '#ac3939ff',
+  },
+  contentModal: {
+    flex: 1,
+    paddingHorizontal: 20,
+    gap: 20,
+  },
+  closeButton: {
+    width: '100%',
+    paddingVertical: 20,
+    paddingHorizontal: 20,
+    alignItems: 'flex-end',
+  },
   title: {
     color: 'black',
     fontSize: 36,
@@ -35,6 +53,63 @@ export const style = StyleSheet.create({
     padding: 8, 
     borderColor: 'black', 
     borderRadius: 8,
-    backgroundColor: '#0547c2',
-  }
+    backgroundColor: '#2ec96f',
+  },
+  card: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    backgroundColor: '#e0e3e6c4',
+    padding: 12,
+    marginVertical: 5,
+    borderRadius: 6,
+    borderLeftWidth: 5,
+    borderLeftColor: '#ff0000ff',
+  },
+  productName: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    marginBottom: 5,
+    marginLeft: 50,
+  },
+  list: {
+    flex: 1,
+  },
+  emptyText: {
+    textAlign: 'center',
+    marginTop: 20,
+    color: '#888',
+    fontStyle: 'italic',
+  },
+  textContainer: {
+    height: 100,
+    width: 300,
+    flexDirection: 'column',
+  },
+  actionContainer: {
+    paddingRight: 6,
+    gap: 10,
+    alignItems: 'center',
+    justifyContent: 'space-evenly',
+    flexDirection: 'column',
+    marginTop: 20,
+  },
+  actionButton: {
+    width: 60,
+    paddingVertical: 6,
+    paddingHorizontal: 10,
+    borderRadius: 50,
+  },
+  actionText: {
+    color: '#fff',
+    fontWeight: '500',
+    fontSize: 12,
+    textAlign: 'center',
+  },
+  editButton: {
+    backgroundColor: '#4CAF50', 
+  },
+  deleteButton: {
+    backgroundColor: '#af4c4cff', 
+  },
 });
