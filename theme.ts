@@ -8,7 +8,7 @@ export const style = StyleSheet.create({
   },
   contentContainer: {
     flex: 1,
-    width: '90%',
+    width: '98%',
     height: 200,
     gap: 20,
     padding: 10,
@@ -16,8 +16,8 @@ export const style = StyleSheet.create({
   },
   viewButtonAdd: {
     flex: 0, 
-    paddingHorizontal: 200,
-    paddingVertical: 10,
+    // paddingHorizontal: 200,
+    // paddingVertical: 10,
     alignItems: 'center',
     // backgroundColor: '#ac3939ff',
   },
@@ -34,7 +34,7 @@ export const style = StyleSheet.create({
   },
   title: {
     color: 'black',
-    fontSize: 36,
+    fontSize: 16,
     lineHeight: 100,
   },
   input: {
@@ -57,16 +57,16 @@ export const style = StyleSheet.create({
   },
   card: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    justifyContent: 'space-evenly',
     backgroundColor: '#e0e3e6c4',
-    padding: 12,
+    padding: 6,
     marginVertical: 5,
     borderRadius: 6,
     borderLeftWidth: 5,
-    borderLeftColor: '#ff0000ff',
+    borderLeftColor: '#0044ffff',
   },
   productName: {
-    fontSize: 16,
+    fontSize: 14,
     fontWeight: 'bold',
     textAlign: 'center',
     marginBottom: 5,
@@ -75,36 +75,29 @@ export const style = StyleSheet.create({
   list: {
     flex: 1,
   },
-  emptyText: {
-    textAlign: 'center',
-    marginTop: 20,
-    color: '#888',
-    fontStyle: 'italic',
-  },
   textContainer: {
-    height: 100,
     width: 300,
+    height: 100,
     flexDirection: 'column',
   },
   actionContainer: {
-    paddingRight: 6,
     gap: 10,
     alignItems: 'center',
     justifyContent: 'space-evenly',
     flexDirection: 'column',
-    marginTop: 20,
+    marginTop: 26,
   },
   actionButton: {
-    width: 60,
-    paddingVertical: 6,
-    paddingHorizontal: 10,
-    borderRadius: 50,
+    width: 24,
+    height: 24,
+    borderRadius: '50%',
   },
   actionText: {
     color: '#fff',
     fontWeight: '500',
-    fontSize: 12,
+    fontSize: 10,
     textAlign: 'center',
+    marginTop: 6,
   },
   editButton: {
     backgroundColor: '#4CAF50', 

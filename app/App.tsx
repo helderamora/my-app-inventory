@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
+import { Feather } from '@expo/vector-icons'
 import {
   Text,
   View,
@@ -94,8 +95,8 @@ export default function ProductRegistration() {
       <View style={style.card}>
         <View style={style.textContainer}>
           <Text style={style.productName}>{item.name}</Text>
-          <Text>Marca: {item.brand}</Text>
-          <Text style={{marginTop: 16,}}>Preço: R${item.price}</Text>
+          <Text style={{marginTop: 12, fontSize: 12,}}>Tamanho: {item.brand}</Text>
+          <Text style={{marginTop: 18, fontSize: 12,}}>Preço: R${item.price}</Text>
         </View>
 
         <View style={style.actionContainer}>
@@ -103,7 +104,9 @@ export default function ProductRegistration() {
           style={[style.actionButton, style.editButton]}
           onPress={() => startEdit(item)}
           >
-            <Text style={style.actionText}>editar</Text>
+            <Text style={style.actionText}>
+              <Feather name="edit-2"/>
+            </Text>
           </TouchableOpacity>
 
 
@@ -111,7 +114,9 @@ export default function ProductRegistration() {
           style={[style.actionButton, style.deleteButton]}
           onPress={() => handleDelete(item.id)}
           >
-            <Text style={style.actionText}>deletar</Text>
+            <Text style={style.actionText}>
+              <Feather name="trash-2"/>
+            </Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -122,7 +127,7 @@ export default function ProductRegistration() {
     <SafeAreaProvider>
       <SafeAreaView style={style.container}>
         <View style={style.contentContainer}>
-          <Text style={style.title}>Cadastre-se</Text>
+          <Text style={style.title}>Cadastrar produtos</Text>
 
           <FlatList
           data={products}
@@ -144,14 +149,15 @@ export default function ProductRegistration() {
               onPress={() => setVisible(!visible)}>
               <Text 
               style={{
-                backgroundColor: '#f8aeae', 
-                color: '#fff', width: 38, 
-                height: 36,
+                backgroundColor: '#f33333', 
+                color: '#fff', 
+                width: 28, 
+                height: 26,
                 textAlign: 'center',
-                paddingTop: 8,
+                paddingTop: 3,
                 borderRadius: 50,
               }} 
-                >❌</Text>
+                >X</Text>
               </Pressable>
             </View>
             <View style={style.contentModal}>
@@ -165,13 +171,13 @@ export default function ProductRegistration() {
               />
               <TextInput
                 style={style.input}
-                placeholder="Marca"
+                placeholder="Tamanho"
                 value={brand}
                 onChangeText={(b) => setBrand(b)}
               />
               <TextInput
                 style={style.input}
-                placeholder="Marca"
+                placeholder="Preço"
                 value={price}
                 onChangeText={(p) => setPrice(p)}
               />
@@ -181,8 +187,10 @@ export default function ProductRegistration() {
             </View>
           </Modal>
           <View style={style.viewButtonAdd}>
-            <Pressable style={{backgroundColor: '#4CAF50', borderRadius: 50, width: 100, height: 56, justifyContent: 'center',}} onPress={() => setVisible(true)}>
-              <Text style={{fontSize: 40, fontWeight: 500, textAlign: 'center', color: '#fcfcfc',}}>+</Text>
+            <Pressable style={{backgroundColor: '#2237f8', borderRadius: 10, width: 300, height: 36, justifyContent: 'center',}} onPress={() => setVisible(true)}>
+              <Text style={{fontSize: 16, fontWeight: 500, textAlign: 'center', color: '#fcfcfc', }}>
+                <Feather name="plus-circle" size={18}/>
+              </Text>
             </Pressable>
           </View>
         </View>
