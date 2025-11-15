@@ -159,12 +159,3 @@ Este projeto é de uso livre para fins pessoais e educacionais.
 
 ---
 
-Se quiser, posso:
-
-🔧 **refatorar o código**,
-🎨 **melhorar o design**,
-🗂 **separar os componentes**,
-📚 **adicionar documentação técnica dos componentes**,
-📦 **criar uma versão com TypeScript**.
-
-É só pedir!
